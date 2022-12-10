@@ -80,9 +80,6 @@ for i in range(1, 11):
     elif i == 10:
         print(f'\nPrzegrałeś :( - rozwiązanie to {rozwiazanie_lista}')
 
-'''print(f'Rozwiązanie: {rozwiazanie_lista}')
-print(f'Przebieg oceny w grze:')
-for x in dziennik: print(x)'''
 
 
 
