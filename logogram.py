@@ -1,4 +1,4 @@
-# Logogram - Ty zgadujesz
+# Logogram - Mastermind
 from random import choices
 from colorama import Fore, init
 
@@ -51,7 +51,7 @@ class Tura:
 init(autoreset=True)
 
 paleta_kolorow = ('W', 'V', 'G', 'R', 'B', 'Y')
-print(f'Grzybki są w sześciu kolorach:\t{Fore.WHITE}White - (W) {Fore.MAGENTA}Violet - (V)  {Fore.GREEN}Green - (G)  {Fore.RED}Red - (R)  {Fore.BLUE}Blue - (B)  {Fore.YELLOW}Yellow - (Y) ')
+print(f'Grzybki są w sześciu kolorach:\n{Fore.WHITE}White - (W) {Fore.MAGENTA}Violet - (V)  {Fore.GREEN}Green - (G)  {Fore.RED}Red - (R)  {Fore.BLUE}Blue - (B)  {Fore.YELLOW}Yellow - (Y) ')
 
 # Wylosowanie kolorów grzybków
 rozwiazanie_lista = choices(paleta_kolorow, k=4)
@@ -69,8 +69,7 @@ for i in range(1, 11):
     tura.sprawdz_biale(rozwiazanie, dziennik, punktacja)
 
     for y, linia in enumerate(odpowiedzi):
-        print(f'TURA {y + 1}: ( {s_k[linia[0]]}{linia[0]}{Fore.RESET} - {s_k[linia[1]]}{linia[1]}{Fore.RESET} - {s_k[linia[2]]}{linia[2]}{Fore.RESET} - {s_k[linia[3]]}{linia[3]}{Fore.RESET} )',
-              end='')
+        print(f'TURA {y + 1}: ( {s_k[linia[0]]}{linia[0]}{Fore.RESET} - {s_k[linia[1]]}{linia[1]}{Fore.RESET} - {s_k[linia[2]]}{linia[2]}{Fore.RESET} - {s_k[linia[3]]}{linia[3]}{Fore.RESET} )', end='')
         print(f'\t{punktacja[y][0]} - {punktacja[y][1]}')
 
     if tura.czarne == 4:
