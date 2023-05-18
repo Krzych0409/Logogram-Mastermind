@@ -1,5 +1,7 @@
 LOGOGRAM - znana jako "Mastermind"
 
+Gra potrzebuje biblioteki: "colorama", którą trzeba zainstalować przez "pip"
+
 Program losuje 4 grzybki o różnych kolorach w określonej kolejności.
 Zadaniem gracza jest odgadnięcie kolorów grzybków w odpowiedniej kolejności.
 Kolory mogą się powtarzać.
